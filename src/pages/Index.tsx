@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation';
 import QRCode from '@/components/QRCode';
 import CodePreview from '@/components/CodePreview';
-
 const loginFormCode = `// Componente de Login com Modo Escuro e Validação
 import { useState } from 'react';
 import { z } from 'zod';
@@ -65,10 +64,8 @@ const Login = () => {
     </div>
   );
 };`;
-
 const Index = () => {
-  return (
-    <div className="min-h-screen w-full">
+  return <div className="min-h-screen w-full">
       <Navigation />
       
       {/* Hero Section */}
@@ -156,18 +153,9 @@ const Index = () => {
           <h2 className="section-title">Outras ferramentas</h2>
           <div className="section-content">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-              {[
-                'V0.dev',
-                'Teleporthq.io',
-                'Builder.io',
-                'Uizard.io',
-                'Locofy.ai',
-                'Shaper.studio'
-              ].map((tool, index) => (
-                <div key={index} className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              {['V0.dev', 'Teleporthq.io', 'Builder.io', 'Uizard.io', 'Locofy.ai', 'Shaper.studio'].map((tool, index) => <div key={index} className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                   <p className="text-center font-medium text-gray-800">{tool}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -182,10 +170,7 @@ const Index = () => {
               Prompt: 'Formulário de login com modo escuro e validação'
             </p>
             
-            <CodePreview 
-              title="Login.jsx" 
-              code={loginFormCode} 
-            />
+            <CodePreview title="Login.jsx" code={loginFormCode} />
             
             <div className="mt-8 text-center">
               <Button className="bg-lovable-blue hover:bg-lovable-blue/90 text-white">
@@ -258,11 +243,7 @@ const Index = () => {
       <section id="closing" className="section-container bg-lovable-blue text-white">
         <div className="container mx-auto">
           <div className="section-content text-center">
-            <p className="mb-6 max-w-3xl mx-auto">
-              Utilizamos a inteligência artificial para potencializar a inteligência humana: promovemos 
-              o uso da IA como aliada para melhorar nossa produtividade e tornar o nosso dia a dia
-              mais inteligente.
-            </p>
+            <p className="mb-6 max-w-3xl mx-auto font-semibold text-3xl">"Utilizamos a inteligência artificial para potencializar a inteligência humana: promovemos o uso da IA como aliada para melhorar nossa produtividade e tornar o nosso dia a dia mais inteligente."</p>
             
             <p className="max-w-3xl mx-auto">
               Ferramentas como o Lovable potencializa a colaboração, e nos torna mais produtivos não substitui o talento humano.
@@ -277,8 +258,6 @@ const Index = () => {
           <p>© 2023 - Criado com Lovable</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
