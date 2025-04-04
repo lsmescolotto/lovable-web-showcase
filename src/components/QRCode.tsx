@@ -7,6 +7,8 @@ const QRCode = () => {
       <img
         width="180"
         height="180"
+        className="mx-auto"
+        src="/assets/adobe-express-qr-code.png"
       />
       <div className="text-center mt-2 text-sm font-medium text-gray-700">
         lovable.dev
