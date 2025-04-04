@@ -191,6 +191,10 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-sm">
                 <ul className="space-y-4">
+                <li className="list-item">
+                    <span className="list-bullet">•</span>
+                    <span>Prototipagem em pouco tempo</span>
+                  </li>
                   <li className="list-item">
                     <span className="list-bullet">•</span>
                     <span>Entregas mais rápidas</span>
@@ -206,11 +210,11 @@ const Index = () => {
                 <ul className="space-y-4">
                   <li className="list-item">
                     <span className="list-bullet">•</span>
-                    <span>Alinha dev + design + produto</span>
+                    <span>Validação do produto antes de começar o desenvolvimento</span>
                   </li>
                   <li className="list-item">
                     <span className="list-bullet">•</span>
-                    <span>Mais tempo para foco em lógica e experiência</span>
+                    <span>Mais tempo para foco em lógicas complexas e experiência do usuário</span>
                   </li>
                 </ul>
               </div>
