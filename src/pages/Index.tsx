@@ -153,8 +153,8 @@ const Index = () => {
           <h2 className="section-title">Outras ferramentas</h2>
           <div className="section-content">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-              {['V0.dev', 'Teleporthq.io', 'Builder.io', 'Uizard.io', 'Locofy.ai', 'Shaper.studio'].map((tool, index) => <div key={index} className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                  <p className="text-center font-medium text-gray-800">{tool}</p>
+              {['V0.dev', 'Teleporthq.io', 'Builder.io', 'Uizard.io', 'Locofy.ai', 'Shaper.studio', 'Cursor.com'].map((tool, index) => <div key={index} className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                 <a href={`https://${tool}`}><p className="text-center font-medium text-gray-800">{tool}</p></a>
                 </div>)}
             </div>
           </div>
