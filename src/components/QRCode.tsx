@@ -1,5 +1,6 @@
 
 import React from 'react';
+import qrCode from '../assets/adobe-express-qr-code.png';
 
 const QRCode = () => {
   return (
@@ -8,7 +9,7 @@ const QRCode = () => {
         width="180"
         height="180"
         className="mx-auto"
-        src="assets/adobe-express-qr-code.png"
+        src={qrCode}
       />
       <div className="text-center mt-2 text-sm font-medium text-gray-700">
         lovable.dev
